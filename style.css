@@ -1,29 +1,122 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-header {
-    top: 0;
-    height: 80px;
-    background-color: bisque;
-    width: 100%;
-    border: 2px solid black;
-    position: sticky;
-    z-index: 2;
-
-}
-section {
-    min-height: 50vh;
-    background-color: chocolate;
-    border: 2px solid black;
-    margin: 1rem;
-    position: relative;
-}
-
-section span {
-    position: fixed;
+body {
+    font-size: 20px;
+    font-family: 'Rajdhani', sans-serif;
+    background: #010A13;
+  }
+  
+  .madeBy {
+    position: absolute;
     bottom: 0;
-    z-index: 1;
-}
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    margin-bottom: 69px;
+    text-align: center;
+    color: #fff;
+    font-family: Helvetica;
+    font-size: 9px;
+    letter-spacing: 2px;
+  }
+  
+  /*//////////////////////////////////////////////////////*/
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  .killFeed {
+    margin-top: 15px;
+    min-width: 100px;
+    position: relative;
+    display: inline-block;
+    height: 40px;
+    background: rgba(0,0,0,0.5);
+    border: 2px #B50000 solid;
+    border-radius: 6px;
+    padding: 0 10px;
+    transform: scale(1);
+    transition: .1s;
+  }
+  
+  .killFeed:hover {
+    transform: scale(1.01);
+    box-shadow: 0 0 10px rgba(111, 0, 0, 0.5);
+  }
+  
+  .killer {
+    color: #ECCE51;
+    line-height: 40px;
+    display: inline-block;
+    margin-right: 10px;
+    float: left;
+  }
+  
+  .weapon {
+    float: left;
+  }
+  
+  .weapon.ak47 {
+    margin-top: 8px;
+    height: 25px;
+    width: 80px;
+    background: url(http://i.imgur.com/fZlAs4p.png) no-repeat;
+    background-size: cover;
+    float: left;
+  }
+  
+  .weapon.usp {
+    margin-top: 8px;
+    height: 25px;
+    width: 80px;
+    background: url(http://i.imgur.com/dT1EGjU.png) no-repeat;
+    background-size: cover;
+    float: left;
+  }
+  
+  
+  .weapon.awp {
+    margin-top: 8px;
+    height: 25px;
+    width: 80px;
+    background: url("http://i.imgur.com/i5Euh7o.png") no-repeat;
+    background-size: cover;
+    float: left;
+  }
+  
+  .headshot.true {
+    margin: 8px 0px 0px 10px;
+    height: 22px;
+    width: 22px;
+    background-image: url(https://www.steamid.co.uk/images/headshot.png);
+    background-size: cover;
+    float: left;
+  }
+  
+  .wallbang {
+    float: left;
+  }
+  
+  .wallbang.true {
+    margin: 8px 0px 0px 10px;
+    height: 22px;
+    width: 22px;
+    background: url(http://i.imgur.com/FmmFb28.png);
+    background-size: cover;
+    float: left;
+  }
+  
+  .headshot {
+    float: left;
+  }
+  
+  .killed {
+    margin-left: 10px;
+    color: #71A6FF;
+    line-height: 40px;
+    display: inline-block;
+    float: left;
+  }
