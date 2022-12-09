@@ -26,3 +26,33 @@ body {
     /* mix-blend-mode:luminosity */
   }
   
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    top: 0;
+    height: 80px;
+    background-color: bisque;
+    width: 100%;
+    border: 2px solid black;
+    position: sticky;
+    z-index: 2;
+
+}
+section {
+    min-height: 50vh;
+    background-color: chocolate;
+    border: 2px solid black;
+    margin: 1rem;
+    position: relative;
+}
+
+section span {
+    position: fixed;
+    bottom: 0;
+    z-index: 1;
+}
+
